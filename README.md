@@ -10,8 +10,7 @@ An alternative is self-generated data, the structure of which should reflect rea
 
 Rather, the following paper can be found on the subject:
 
-Azeroual, O.; Jha, M.; Nikiforova, A.; Sha, K.; Alsmirat, M.; Jha, S.  A Record Linkage-Based Data Deduplication Framework with DataCleaner Extension. Multimodal Technologies and Interaction, 2022, (forthcoming).
-
+Azeroual O, Jha M, Nikiforova A, Sha K, Alsmirat M, Jha S. A Record Linkage-Based Data Deduplication Framework with DataCleaner Extension. Multimodal Technologies and Interaction. 2022; 6(4):27. https://doi.org/10.3390/mti6040027 
 
 
 
