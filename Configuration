@@ -1,0 +1,36 @@
+#Spark Config
+#Options: spark://... | local[4]
+spark.conf.master=spark://vsispool20:7077
+
+#General
+#Options: hdfs://vsispool20:9000 ... | file:///...
+dapo.basePath = hdfs://vsispool20:9000
+dapo.verbose = true
+#Options: target | source
+dapo.tupleCount.of = target
+dapo.tupleCount = 1000000
+
+#Input
+dapo.input.file = ${dapo.basePath}/musicbrainz-unique-1000000.csv
+dapo.input.firstLine = 1
+
+#Duplicates
+#Options: relative | absolute | determined
+dapo.duplicates.method = relative
+dapo.duplicates.relative = 0.1
+#if ’absolute’: dapo.duplicates.absolute = 100
+#if ’determined’: dapo.duplicates.determined = 100x2 10x3 1x4
+#Options: equaltuple | equalpair | equalcluster
+dapo.duplicates.distribution = equalpair
+dapo.duplicates.clustersizes = 2 to 20
+dapo.duplicates.clustersim = 0.85
+
+#Output
+dapo.output.tableSchemaFile = ${dapo.input.file}.tableschema.xml
+dapo.output.errorSchemaFile = ${dapo.input.file}.errorschema.xml
+dapo.output.tmpPath = ${dapo.basePath}/_tmp
+dapo.output.file = ${dapo.input.file}.dapo
+dapo.output.separator = ,
+dapo.output.header = true
+dapo.output.prepedTid = true
+dapo.output.prepedCid = true
