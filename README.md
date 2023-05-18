@@ -15,6 +15,36 @@ Azeroual O, Jha M, Nikiforova A, Sha K, Alsmirat M, Jha S. A Record Linkage-Base
 
 # Workflow Framework For Enterprise Data Deduplication
 
+In the digital age, data is considered a business-critical asset (Spiekermann, Wenzel & Otto, 2018). This is even more true in the context of the data economy, which is based on data exchange in cross-company ecosystems, where data and the exchange with them are important pillars. Therefore, data governance is a key requirement in a fast-moving and competitive environment and is therefore seen as a enabler for the data economy (Engels, 2019). Now that organizations are able to collect massive amounts of disparate internal and external data, they need a plan to maximize the value of that data, effectively manage potential risks, and reduce costs.
+However, in most organizations there is a deluge of internal and external data streams without a clear understanding of what data is available, where it is located/stored, where it is coming from (manual input or IoT device), what it is are about who is responsible for them, what quality they have and whether and, above all, how they relate to the databases of other companies. What's more, many companies suspect that their data is not error-free (Redman, 2020).
+Data governance encompasses the processes and responsibilities relevant to the quality of data used in an organization. Companies can use it to determine who can use which data in which situations and with which methods (Che, Safran & Peng, 2013).
+Data governance is usually based on a (company) specific framework that sets the guidelines for the company. Although data governance has gained prominence in recent years, there is a lack of a holistic view of data governance frameworks that could guide both practitioners and researchers (Abraham, Schneider & vom Brocke, 2019). Also specific data governance frameworks focusing on specific decision domains such as data analysis, data security and data life cycle (Donaldson & Walker, 2004; Tallon, Ramirez & Short, 2014; Hildebrandt et al. 2020) or smaller reviews to support the conceptual or empirical content (Lee, Zhu & Jeffery, 2017; Brous & Janssen, 2020) were developed. Despite their increasing relevance, current data governance frameworks fail to address the growing problem of duplicate data. For example, the framework presented by (Hildebrandt et al. 2020) with the implemented prototype, which is based on the Apache Spark cluster computing framework, is not suitable for all data formats, especially not for data from database formats such as CRM, ERP or SAP to contaminate a clean, homogeneous and large database from any domain with duplicates, errors and inhomogeneities. Therefore we want to extend this workflow framework in the context of all kinds of databases and formats with our developed fault-tolerant methods. However, duplicate data is particularly important in today's connected world and when data is shared across companies, as the growing amount of data from different sources creates duplicate data that must be identified and eliminated before making decisions based on incorrect data. In general, ignoring methods to deal with duplicate data leads to companies suffering serious accidents and injuries due to real system results. At the very least, business users will be less inclined to trust data sets and the applications based on them. Therefore, prevention in this context is key to avoiding duplication and optimizing data quality.
+For this reason, we want to close the research gap with our solution and therefore, in the first step, present methods of how companies can meaningfully deal with duplicate data. We have focused on data profiling using different analysis methods, such as analyzing different types of errors and structuring and harmonizing duplicate data. These methods were chosen because they are often domain-independent and can often be transferred to other application contexts. Second, it can be used to assess the quality, structure, and content of duplicate data. In the second step, we will then sort the methods discussed in our framework and also in the existing framework from (Hildebrandt et al. 2020), and show how this framework can be sensibly adapted or expanded with these methods in a tool to address issues of duplicate data that have occurred. Our workflow framework supports future data governance research by identifying enterprise-level duplicate data and addressing today's demands of increasing interconnectedness, data ubiquity, and multi-data sourcing. In addition, the framework aims to provide an overview of the quality of the data in order to help practitioners to approach data governance in a structured manner.
 
+More details on this topic can be found under this paper:
 
+Azeroual O, Nikiforova A, Sha K. Overlooked Aspects of Data Governance: Workflow Framework For Enterprise Data Deduplication.  The International Conference on Intelligent Computing, Communication, Networking and Services (ICCNS2023) June 19-22, 2023 - Valencia, Spain (Accepted).
+
+#References
+
+Abraham, R., Schneider, J. & vom Brocke, J. (2019). Data governance: A conceptual framework, structured review, and research agenda. International Journal of Information Management, 49, 424–438.
+
+Brous, P., & Janssen, M. (2020). Trusted decision-making: Data governance for creating trust in data science decision outcomes. Administrative Sciences, 10(4), 81.
+
+Che, D., Safran, M. & Peng, Z. (2013). From Big Data to Big Data Mining: Challenges, Issues, and Opportunities. In: Hong, B., Meng, X., Chen, L., Winiwarter, W., Song, W. (eds) Database Systems for Advanced Applications. DASFAA 2013. Lecture Notes in Computer Science, vol.7827. Springer, Berlin, Heidelberg.
+
+Donaldson, A., & Walker, P. (2004). Information governance—A view from the NHS. International Journal of Medical Informatics, 73, 281–284.
+ 
+Engels, B. (2019). Data governance as the enabler of the data economy. Intereconomics, 54, 216–222.
+
+Hildebrandt, K., Panse, F., Wilcke, N. & Ritter, N. (2020). Large-Scale Data Pollution with Apache Spark. IEEE Transactions on Big Data, 6, 396–411.
+
+Lee, S. U., Zhu, L., & Jeffery, R. (2017). Data governance for platform ecosystems: Critical factors and the state of practice. arXiv preprint arXiv:1705.03509.
+
+Redman T. (2020). To Improve Data Quality, Start at the Source (hbr.org).
+
+Spiekermann, M., Wenzel, S., & Otto, B. (2018). A Conceptual Model of Benchmarking Data and its Implications for Data Mapping in the Data Economy.
+Multikonferenz Wirtschaftsinformatik 2018, March 06-09, 2018, Lüneburg, Germany.
+
+Tallon, P.P., Ramirez, R.V., & Short, J.E. (2014). The information artifact in IT governance: Toward a theory of information governance. Journal of Management Information Systems, 30, 141–177.
 
